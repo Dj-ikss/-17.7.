@@ -7,3 +7,16 @@ Deposit = [round(k * money*0.01) for k in L]
 
 print('Начисленные проценты, руб: ', Deposit)
 print('Максимальная сумма, которую вы можете заработать, руб — ', max(Deposit))
+
+
+VER2
+
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+money = float(input('Введите сумму вклада, руб: '))
+
+L = list(per_cent.values())
+
+for D in L:
+    Deposit = [round(L[0]*money*0.01), round(L[1]*money*0.01), round(L[2]*money*0.01), round(L[3]*money*0.01)]
+print('Начисленные проценты, руб: ', Deposit)
+print('Максимальная сумма, которую вы можете заработать, руб — ', max(Deposit))
